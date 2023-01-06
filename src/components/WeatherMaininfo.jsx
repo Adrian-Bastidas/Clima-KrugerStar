@@ -21,10 +21,9 @@ const WeatherMaininfo = ({ weather }) => {
         width="85%"
         height="365"
         style={{ border: 0 }}
-        allowfullscreen=""
         loading="lazy"
         className='mapa'
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
+        referrerPolicy="no-referrer-when-downgrade"></iframe>
     </div>
   )
 }
