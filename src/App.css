@@ -1,3 +1,119 @@
 .App {
   text-align: center;
 }
+body{
+  background: linear-gradient(to right, #6e397c, #252132); 
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 40%;
+  height: 100%;
+  margin-top: 2%;
+  margin-left: 30%;
+  box-shadow: 2px 2px 20px black;;
+  border: 0;
+  border-radius:1rem;
+}
+.escritura{
+  width: 60%;
+  height: 100%;
+  border: none; /* Oculta los bordes por defecto */
+  border-bottom: 1px solid #333; /* Añade un borde superior de 1px y color #333 */
+  outline: none;
+}
+.contenedor-formulario{
+  padding: 3%;
+}
+input{
+  text-align: center;
+}
+.superior{
+  padding-top: 5%;
+  padding-bottom: 3%;
+  font-family: "fantasy";
+  font-size: 200%;
+  font-weight: 800;
+}
+.datos-contenedor{
+  display: flex;
+  justify-content: center;
+}
+.grados{
+  padding-right: 10%;
+}
+.icono{
+  padding-right: 10%;
+}
+.descripcion{
+  font-family: "cursive";
+  font-size: 100%;
+}
+.temperatura{
+  font-family: "monospace";
+  font-size: 200%;
+  font-weight: 600;
+}
+.icono{
+  width: 20%;
+  margin-top: -5%;
+}
+.ciudad{
+  font-family: "cursive";
+  margin-top: 2%;
+  font-size: 150%;
+  font-weight: 600;
+}
+.mapa{
+  padding-bottom: 3%;
+  padding-top: 3%;
+  border-radius: 50px;
+}
+.loadingContainer {
+  width: 500px;
+  height: 634px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.loader {
+  width: 50px;
+  height: 50px;
+  box-sizing: border-box;
+  padding: 10px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    43deg,
+    rgba(2, 0, 36, 1) 0%,
+    #6e397c 35%,
+    #252132 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+
+  animation: rotation 0.5s linear infinite;
+}
+
+.loader div {
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(358deg);
+  }
+}
